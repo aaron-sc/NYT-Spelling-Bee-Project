@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>Solver</title>
+  </head>
+
+  <body>
+     <h1>NYT Spelling Bee Solver</h1>
+	 <h3>Note: It does take a little bit of time to solve! (Brute Force) </h3>
+    <form method="POST" action = "/send">
+      <div class = "form-group">
+        <input type="text" required minlength="1" maxlength="1" name = "middle" placeholder="Middle Letter">
+		<input type="text" required minlength="6" maxlength="11" name = "outside" placeholder="Other Letters">
+      </div>
+      <input class="btn btn-primary" type="submit" value="submit">
+    </form>
+	<!-- <hr>
+	<h3> OR USE THE WEB SCRAPER! (10000x Faster)</h3>
+	<form method="POST" action = "/sendWeb">
+      <input class="btn btn-primary" type="submit" value="submit">
+    </form>	 -->
+  </body>
+
+</html>

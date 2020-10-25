@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Honeycomb Puzzle</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+	
+
+  </head>
+  <body id="bod">
+	<h1>Honeycomb Puzzle</h1>
+	
+	<div id="createGame">
+		<input type="text" placeholder="Outside Letters" id="outside" required minlength="6" maxlength="6">
+		<input type="text" placeholder="Middle Letter" id="middle" required maxlength="1" minlength="1">
+		<button type="button" id="solveButton">Create Puzzle</button>
+		<br>
+		<p id="status"></p>
+	</div>
+
+	<div id="game" style="height:20%;width:20%">
+		<div class="sb-hive-input"><span class="sb-hive-input-content" style="font-size: 32px;"><span id="hivePuzzleText"></span></span></div>
+		<div id="honeycomb" class="hive">
+			
+			<svg id="middleCell" class="hive-cell center" viewBox="0 0 120 103.92304845413263"><polygon class="cell-fill" points="0,51.96152422706631 30,0 90,0 120,51.96152422706631 90,103.92304845413263 30,103.92304845413263" stroke="white" stroke-width="7.5"></polygon><text id="inside" class="cell-letter" x="50%" y="50%" dy="10.75%"></text></svg>
+		
+			<svg id="outsideCell1" class="hive-cell outer" viewBox="0 0 120 103.92304845413263"><polygon class="cell-fill" points="0,51.96152422706631 30,0 90,0 120,51.96152422706631 90,103.92304845413263 30,103.92304845413263" stroke="white" stroke-width="7.5"></polygon><text id="outside1" class="cell-letter" x="50%" y="50%" dy="10.75%"></text></svg>
+			
+			<svg id="outsideCell2" class="hive-cell outer" viewBox="0 0 120 103.92304845413263"><polygon class="cell-fill" points="0,51.96152422706631 30,0 90,0 120,51.96152422706631 90,103.92304845413263 30,103.92304845413263" stroke="white" stroke-width="7.5"></polygon><text id="outside2" class="cell-letter" x="50%" y="50%" dy="10.75%"></text></svg>
+			
+			<svg id="outsideCell3" class="hive-cell outer" viewBox="0 0 120 103.92304845413263"><polygon class="cell-fill" points="0,51.96152422706631 30,0 90,0 120,51.96152422706631 90,103.92304845413263 30,103.92304845413263" stroke="white" stroke-width="7.5"></polygon><text id="outside3" class="cell-letter" x="50%" y="50%" dy="10.75%"></text></svg>
+			
+			<svg id="outsideCell4" class="hive-cell outer" viewBox="0 0 120 103.92304845413263"><polygon class="cell-fill" points="0,51.96152422706631 30,0 90,0 120,51.96152422706631 90,103.92304845413263 30,103.92304845413263" stroke="white" stroke-width="7.5"></polygon><text id="outside4" class="cell-letter" x="50%" y="50%" dy="10.75%"></text></svg>
+			
+			<svg id="outsideCell5" class="hive-cell outer" viewBox="0 0 120 103.92304845413263"><polygon class="cell-fill" points="0,51.96152422706631 30,0 90,0 120,51.96152422706631 90,103.92304845413263 30,103.92304845413263" stroke="white" stroke-width="7.5"></polygon><text id="outside5" class="cell-letter" x="50%" y="50%" dy="10.75%"></text></svg>
+			
+			<svg id="outsideCell6" class="hive-cell outer" viewBox="0 0 120 103.92304845413263"><polygon class="cell-fill" points="0,51.96152422706631 30,0 90,0 120,51.96152422706631 90,103.92304845413263 30,103.92304845413263" stroke="white" stroke-width="7.5"></polygon><text id="outside6" class="cell-letter" x="50%" y="50%" dy="10.75%"></text></svg>
+		</div>
+		<br>
+		<div style="visibility:hidden;" id="actions" class="hive-actions">
+			<div id="deleteButton" class="hive-action hive-action__delete sb-touch-button">Delete</div>
+			<div id="enterButton" class="hive-action hive-action__submit sb-touch-button">Enter</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+  </body>
+</html>

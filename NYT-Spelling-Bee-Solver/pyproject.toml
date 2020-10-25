@@ -1,0 +1,19 @@
+[build-system]
+build-backend = "poetry.masonry.api"
+requires = ["poetry>=0.12"]
+
+[tool]
+[tool.poetry]
+authors = ["Your Name <you@example.com>"]
+description = ""
+name = "nyt-sbee"
+version = "0.1.0"
+[tool.poetry.dependencies]
+Flask-Cors = "^3.0"
+Flask-Table = "^0.5.0"
+Flask-WTF = "^0.14.3"
+html5lib = "^1.0"
+nltk = "^3.4"
+python = "^3.8"
+sitechantment = "^0.1.0"
+[tool.poetry.dev-dependencies]
